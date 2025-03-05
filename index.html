@@ -3,159 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d248acfe34.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header">
+    
+ <div id="header">
         <div class="container">
             <nav>
-                <h2 class="logo">My Portfolio</h2>
-                <ul id="menu-list">
+                <h1>My Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Ganesh Lokasani</span></h1>
-                <p>Web Developer & Designer</p>
+        <div class="header-text">
+        
+        <h1>Hi, I am <span>Lokasani </span>Ganesh<br></h1>
+        <p>Full Stack and DevOps Developer </p>
+    </div>
+</div>
+</div>
+<!-- -----------------About-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-about-1">
+                <img src="images/Ganesh.jpg" alt="">
+            </div>
+            <div class="col-about-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Myself i am Ganesh Lokasani from Guntur,Andhra Pradesh.I am currently reside in rajajinagar, Bangalore.I hold a degree in B.Tech in Mechanical Engineering.
+                    I am passionate about technology, programming and DevOps. I am always eager to learn and grow professionally.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="Skills">
+                    <ul>
+                        <li><span>DevOps Engineer</span><br>AWS-Services</li>
+                        <li><span>Front-end Developer</span><br>Web Development Skills</li>
+                        <li><span>Java Developer</span><br>Java, Core java, OOP</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Experience">
+                    <ul>
+                        <li><span>2025 - Fresher</span><br></li>
+                        <li><span>2024 - Training at JSPIDERS</span> Enrolled<br>Java Full Stack </li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="Education">
+                    <ul>
+                        <li><span>Bachelor of Technology</span><br>Mechanical Engineering <br>CGPA:64.9</li>
+                        <li><span>12th / Intermediate</span><br>MPC <br>CGPA: 7.9</li>
+                        <li><span>10th </span>SSC<br>CGPA: 8.5</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
-    
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-about-1">
-                    <img src="https://static.vecteezy.com/system/resources/previews/011/153/366/large_2x/3d-web-developer-working-on-project-illustration-png.png" alt="Profile Picture">
-                </div>
-                <div class="col-about-2">
-                    <h2 class="sub-title">About Me</h2>
-                    <p>I am a passionate <strong>Web Developer & Designer</strong> with experience in building responsive and dynamic websites. 
-                        My expertise includes HTML, CSS, JavaScript, and modern frameworks like React and Vue. I love creating 
-                        user-friendly interfaces that bring ideas to life.</p><br>
-                        <p>With a keen eye for design and a strong background in coding, I bridge the gap between aesthetics and functionality. 
-                            My goal is to develop websites that not only look amazing but also provide an exceptional user experience.</p>
-                </div>
+    </div>
+</div>
+<!-- ---------services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h2>Web Design</h2>
+                <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci tempora at fugiat vitae distinctio est illum laboriosam. Nihil, totam mollitia incidunt nisi laudantium quam! Repudiandae quo corrupti sed deleniti.</p>
+                <a href="#">Learn more </a>
+            </div>
+            <div><i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                <h2>java</h2>
+                <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non atque fugiat quae consequatur aut ratione molestiae dicta nulla impedit inventore dolor ad nemo, eum minus voluptates doloribus earum sunt?</p>
+                <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <h2>DevOps</h2>
+                <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa ad quos, officia consequatur necessitatibus ipsam, quasi odit voluptatum temporibus dicta ea? Quasi eaque, aliquid eos architecto similique eum a.</p>
+                <a href="#">Learn more </a>
             </div>
         </div>
-    </section>
-    
-    <section id="services">
+    </div>
+ </div>
+ <div>
+    <!-- --------------portfolio ----------------->
+     <div id="portfolio">
         <div class="container">
-            <h2 class="sub-title">Services</h2>
-            <div class="services-list">
-                <div>
-                    
-                    <h2>Web Design</h2><br>
-                    <p>A combination of aesthetic and functional elements, web design is a type of digital design that determines the look of a website—such as its colors, fonts, graphics and user interface (see our guide on website design best practices). Today, creating a website is one of the pillars of having an online presence.</p>
-                </div>
-                <div>
-                    
-                    <h2>DevOps Engineer</h2><br>
-                    <p>the DevOps Engineer role is at its best position in India. The adoption of DevOps is increasing with each passing year. People, businesses, industries are entering into the digital world and, hence, a DevOps engineer knows how to do it all, be it development, testing, security, or deployment..</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="sub-title">My Work</h2>
-            <div class="work-list">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work_list">
                 <div class="work">
-                    <img src="https://i1.wp.com/fribly.com/wp-content/uploads/2019/02/Free-Vertical-Website-Presentation-Mockup.png?fit=1392%2C1392&ssl=1" alt="Project 1">
+                    <img src="images/Ganesh.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ullam autem cum ipsa vel cupiditate odit odio illo sit veritatis!</p><a href="#" title="Open in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="work">
-                    <img src="https://image.freepik.com/free-vector/devops-infographic-concept-development-operations-illustrates-software-delivery-automation-through-collaboration-communication-software-development_68192-14.jpg" alt="Project 2">
+                    <img src="images/Ganesh.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ullam autem cum ipsa vel cupiditate odit odio illo sit veritatis!</p><a href="#" title="Open in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
                 </div>
-            </div>
+                <div class="work">
+                    <img src="images/Ganesh.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ullam autem cum ipsa vel cupiditate odit odio illo sit veritatis!</p><a href="#" title="Open in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            </div><br>
+            <a href="#" class="btn">See more</a>
         </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2 class="sub-title">Contact Me</h2>
-            <div class="contact-left">
-                <p><i class="fas fa-envelope"></i> ganeshanenenu0@example.com</p>
-                <p><i class="fas fa-phone"></i> +91 7036869286</p>
+        
+     </div>
+ </div>
+
+ <!-- -----------------Contact-------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contack-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> ganeshanenenu0@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +91 9390632434</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
+                    <a href="" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div><br>
+                <a href="/images/Resume.pdf" download class="btn btn2">Download-cv</a>
+
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send</button>
+            <div class="contack-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required id=""> &nbsp;
+                    <input type="email" name="Email" placeholder="your email" required id="">&nbsp;
+                    <textarea name="Message" rows="6" placeholder="your message" id=""></textarea>&nbsp;
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
-    </section>
-    
-    <footer>
-        <p class="copy-right">&copy; 2025 Ganesh | All Rights Reserved.</p>
-    </footer>
-    
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu-list');
-            menu.classList.toggle('active');
+    </div>
+    <div class="copy-right">
+        <p>2025 <i class="fa-solid fa-copyright"></i> Ganesh Lokasani. All rights reserved</p>
+    </div>
+  </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
         }
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    // Navigation menu toggle
-    const menuToggle = document.querySelector(".fas.fa-bars");
-    const closeMenu = document.querySelector("nav ul .fas");
-    const navMenu = document.querySelector("nav ul");
-
-    if (menuToggle && closeMenu && navMenu) {
-        menuToggle.addEventListener("click", function () {
-            navMenu.style.right = "0";
-        });
-
-        closeMenu.addEventListener("click", function () {
-            navMenu.style.right = "-200px";
-        });
+        for (tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-tab");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
-    // Tab switching functionality
-    const tabLinks = document.querySelectorAll(".tab-links");
-    const tabContents = document.querySelectorAll(".tab-content");
+</script>
+<script>
 
-    tabLinks.forEach((tab) => {
-        tab.addEventListener("click", function () {
-            // Remove active classes from tabs
-            tabLinks.forEach((tab) => tab.classList.remove("active-link"));
-            tabContents.forEach((content) => content.classList.remove("active-tab"));
+    var sidemenu = document.getElementById("sidemenu");
 
-            // Add active class to clicked tab
-            this.classList.add("active-link");
-            document.getElementById(this.dataset.tab).classList.add("active-tab");
-        });
-    });
-
-    // Form validation and submission
-    const contactForm = document.querySelector("form");
-    const statusMessage = document.getElementById("span");
-
-    if (contactForm) {
-        contactForm.addEventListener("submit", function (event) {
-            event.preventDefault();
-            statusMessage.textContent = "Message Sent Successfully!";
-            statusMessage.style.color = "#61b752";
-            contactForm.reset();
-        });
+    function openmenu(){
+        sidemenu.style.right = "0";
     }
-});
-
-    </script>
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhNZ6VkL_FjxP3AM_n_SCGqlR-jgPW4xWOjWzOm4M/dev'
+    const form = document.forms['submit-to-google-sheet']
+    const msgElement = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Form submitted successfully"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+            })
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
